@@ -1,3 +1,8 @@
+# Objetivo do algorítimo:
+# Desenvolver o clássico joKenPo.
+# Exercicio pensado por: Gustavo Guanabará / Curso Em Vídeo
+
+
 from random import randint
 
 print('Suas opções: ')

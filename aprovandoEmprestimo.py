@@ -1,7 +1,8 @@
-#Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa.
-#Pergunte o valor da casa, o salario do comprador e em quantos anos vai pagar.
-#A prestação mensal não pode exceder 30% do salário ou então o empréstimo será negado.
-#Exercicio pensado por: Gustavo Guanabará / Curso em vídeo
+# Objetivo do algoritimo:
+# Escrever um algoritmo para aprovar um empréstimo bancário para a compra de uma casa.
+# O algoritimo deverá perguntar o valor da casa, o salario do comprador e em quantos anos irá pagar.
+# A prestação mensal não pode exceder 30% do salário ou então o empréstimo será negado.
+# Exercicio pensado por: Gustavo Guanabará / Curso Em Vídeo
 
 valorCasa = float(input("Digite o valor da casa: "))
 salario = float(input("Digite seu salário: "))

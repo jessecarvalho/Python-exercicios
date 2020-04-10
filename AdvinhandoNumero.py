@@ -1,3 +1,9 @@
+# Objetivo do algoritimo:
+# O programa deverá pensar em um número.
+# O usuário terá 5 chances de advinhar o número.
+# O programa deverá dar dicas ao usuário.
+# Exercicio pensado por: Gustavo Guanabará / Curso Em Vídeo
+
 from random import randint
 from time import sleep
 tentativas = 5

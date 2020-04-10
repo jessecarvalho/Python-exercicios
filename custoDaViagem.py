@@ -1,7 +1,8 @@
-#Desenvolva um programa que pergunte a distância de uma viagem em Km.
-#Calcule o preço da passagem cobrando R$0.50 por Km para viagens de até 
-#200km e R$0.45 por viagens mais longas.
-#Exercicio pensado por: Gustavo Guanabará / Curso em vídeo
+# Objetivo do algorítimo:
+# Desenvolver um programa que pergunte a distância de uma viagem em Km.
+# Calcular o preço da passagem cobrando R$0.50 por Km para viagens de até 
+# 200km e R$0.45 por viagens mais longas.
+# Exercicio pensado por: Gustavo Guanabará / Curso em vídeo
 
 distancia = int(input("Digite a distância em Km: "))
 if distancia < 200 and distancia > 0:
