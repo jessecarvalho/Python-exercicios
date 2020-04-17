@@ -3,22 +3,10 @@
 # O usuário terá 5 chances de advinhar o número.
 # O programa deverá dar dicas ao usuário.
 # Exercicio pensado por: Gustavo Guanabará / Curso Em Vídeo
+from random import randint
+from time import sleep
 
-def trying():
-    
-
-def guess():
-    from random import randint
-    from time import sleep
-    tentativas = 5
-    print("Bem vindo ao jogo da advinhação.")
-    sleep(1.5)
-    print("Irei pensar em um número de 1 a 100 e você, com minhas dicas deverá advinha-lo")
-    sleep(2)
-    print('hmmmm....')
-    sleep(1.5)
-    numero = randint(1,100)
-    print('Número pensado, vamos lá. Tente acertar')
+def trying(numero, tentativas):
     while True: 
         advinhado = int(input("> "))
         if advinhado == numero:
@@ -38,6 +26,31 @@ def guess():
             else:
                 print("Game Over")
                 break;
-        
+
+def guess():
+    return randint(1,100)
+
+def dificuldade():
+    dificuldade = int(input(">"))
+    if dificuldade == 1:
+        return 5
+    if dificuldade == 2:
+        return 3
+    else:
+        print ("Você digitou um valor errado, tente novamente!")
+        dificuldade()
+
 if __name__ == '__main__':
     guess();
+    print("Bem vindo ao jogo da advinhação.")
+    sleep(1.5)
+    print("Irei pensar em um número de 1 a 100 e você, com minhas dicas deverá advinha-lo")
+    sleep(2)
+    print("Em qual nível você quer jogar? 1 para fácil e 2 para dificil")
+    tentativas = dificuldade()
+    sleep(2)
+    print('Tudo certo... huumm...')
+    sleep(1.5)
+    numero = guess()
+    print('Número pensado, vamos lá. Tente acertar')
+    trying(numero, tentativas)
