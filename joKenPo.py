@@ -4,7 +4,6 @@
 
 
 from random import randint
-
 print('Suas opções: ')
 print('[0] Pedra')
 print('[1] Papel')
