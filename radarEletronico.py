@@ -4,11 +4,16 @@
 # A multa deverá custar 7 reais por cada KM acima do limite.
 # Exercicio pensado por: Gustavo Guanabara / Curso em vídeo
 
+def radar(actual, limit):
+    if actual > limit:
+        print("MULTADO: você excedeu o limite de velocidade permitido")
+        trafficTicket = (actual - limit) * 7
+        print(f"O valor de sua multa ficou em: R${trafficTicket}")
 
-velocidadeAtual = int(input("Digite a velocidade atual do carro: "))
-limiteVelocidade = 80
-if velocidadeAtual > limiteVelocidade:
-    print("MULTADO: você excedeu o limite de velocidade permitido")
-    valorMulta = (velocidadeAtual - limiteVelocidade) * 7
-    print(f"O valor de sua multa ficou em: R${valorMulta}")
+if __name__ == '__main__':
+    actualVelocity = int(input("Digite a velocidade atual do carro: "))
+    limitVelocidade = int(input("Diga-me a velocidade máxima permitida: "))
+    radar(actualVelocity, limitVelocidade)
+
+
     

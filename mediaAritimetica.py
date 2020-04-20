@@ -4,15 +4,19 @@
 # Programa deve calcular a média final
 #Exercicio pensado por: Gustavo Guanabará / Curso Em Vídeo
 
+def calcAvg(gradesAmount):
+    i = 1
+    grades = []
+    sumGrades = 0
+    while i <= gradesAmount:
+        grades.append(int(input(f'Digite a {i}ª nota:')))
+        i += 1
+    for grade in grades:
+        sumGrades += grade
+    average = sumGrades / gradesAmount
+    print(f'A média final é: {average}')
 
-quantidadeNotas = int(input('digite a quantidade de notas que serão calculadas: '))
-i = 1
-notas = []
-somaNotas = 0
-while i <= quantidadeNotas:
-    notas.append(int(input(f'Digite a {i}ª nota:')))
-    i += 1
-for nota in notas:
-    somaNotas += nota
-media = somaNotas / quantidadeNotas
-print(f'A média final é: {media}')
+
+if __name__ == '__main__':
+    gradesAmount = int(input('digite a quantidade de notas que serão calculadas: '))
+    calcAvg(gradesAmount)
